@@ -81,7 +81,30 @@ function Inline({ text }: { text: string }) {
             {part}
           </code>
         ) : (
-          <span key={index}>{part}</span>
+          <UrlText key={index} text={part} />
+        ),
+      )}
+    </>
+  );
+}
+
+function UrlText({ text }: { text: string }) {
+  const bits = text.split(/(https?:\/\/[^\s)]+)/);
+  return (
+    <>
+      {bits.map((bit, index) =>
+        bit.startsWith("http") ? (
+          <a
+            key={index}
+            href={bit}
+            className="text-fg underline"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {bit}
+          </a>
+        ) : (
+          <span key={index}>{bit}</span>
         ),
       )}
     </>
