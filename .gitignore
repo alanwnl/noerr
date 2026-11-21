@@ -4,15 +4,9 @@ node_modules/
 .env
 .env.*
 
-# audio and generated clips
-*.mp3
-*.wav
-*.webm
-*.ogg
-*.flac
-*.m4a
-public/previews/
-public/clips/
+# full episode and model weights, not the preview clips
 artifacts/audio/
+data/asr/**/*.wav
 data/asr/**/*.onnx
+*.webm
 .vercel/

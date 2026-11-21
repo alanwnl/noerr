@@ -43,7 +43,7 @@ function Home() {
   const [tab, setTab] = useState<Tab>("preview");
   const [clip, setClip] = useState<Clip>(MOMENTS[0]);
   const [selected, setSelected] = useState(0);
-  const [loading, setLoading] = useState<number | null>(null);
+  const [loading, setLoading] = useState<number | null>(0);
   const [side, setSide] = useState<Side | null>(null);
   const [progress, setProgress] = useState(0);
   const [notes, setNotes] = useState("");
@@ -55,8 +55,16 @@ function Home() {
   const clipRef = useRef(clip);
   clipRef.current = clip;
 
+  const booted = useRef(false);
+
   useEffect(() => {
     setDecisions(readDecisions());
+  }, []);
+
+  useEffect(() => {
+    if (booted.current) return;
+    booted.current = true;
+    void load(0);
   }, []);
 
   useEffect(() => {
