@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "NoErr",
+      "hasCanvas": false,
+      "bodyTextLen": 4681,
+      "bodyTextHash": "2654172e7b79f50515187bb35d482394fb2cfe5cd51f134407677179d06f9f8d",
+      "bodyTextPrefix": "Preview Pipeline Before 直播通知 你啦 咁啊 誒 喺 telegram 都會有 直播通知 嘅 咁啊十時 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "NoErr",
+      "hasCanvas": false,
+      "bodyTextLen": 4681,
+      "bodyTextHash": "2654172e7b79f50515187bb35d482394fb2cfe5cd51f134407677179d06f9f8d",
+      "bodyTextPrefix": "Preview Pipeline Before 直播通知 你啦 咁啊 誒 喺 telegram 都會有 直播通知 嘅 咁啊十時 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

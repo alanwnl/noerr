@@ -1,0 +1,18 @@
+node_modules/
+.project_id
+.github_repo
+.env
+.env.*
+
+# audio and generated clips
+*.mp3
+*.wav
+*.webm
+*.ogg
+*.flac
+*.m4a
+public/previews/
+public/clips/
+artifacts/audio/
+data/asr/**/*.onnx
+.vercel/
